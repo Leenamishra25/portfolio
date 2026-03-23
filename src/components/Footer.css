@@ -1,0 +1,19 @@
+.footer {
+  padding: 2rem 0;
+  border-top: 1px solid var(--border-light);
+  margin-top: 4rem;
+  background: rgba(3, 0, 20, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-copyright {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-family: monospace;
+}

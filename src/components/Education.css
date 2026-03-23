@@ -1,0 +1,124 @@
+.education-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 3rem;
+  position: relative;
+  padding-left: 2rem;
+}
+
+/* vertical timeline line */
+.education-timeline::before {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(
+    180deg,
+    var(--accent-cyan) 0%,
+    var(--accent-purple) 100%
+  );
+  border-radius: 2px;
+}
+
+.edu-timeline-card {
+  position: relative;
+  padding: 1.8rem 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.edu-timeline-card:hover {
+  transform: translateX(6px);
+  box-shadow: 0 10px 30px rgba(6, 182, 212, 0.1);
+}
+
+/* glowing dot on the timeline */
+.edu-timeline-dot {
+  position: absolute;
+  left: -2rem;
+  top: 2rem;
+  width: 12px;
+  height: 12px;
+  background: var(--accent-cyan);
+  border-radius: 50%;
+  transform: translateX(-3px);
+  box-shadow: 0 0 10px rgba(6, 182, 212, 0.6),
+              0 0 20px rgba(6, 182, 212, 0.3);
+}
+
+.edu-timeline-card:hover .edu-timeline-dot {
+  background: var(--accent-purple);
+  box-shadow: 0 0 10px rgba(139, 92, 246, 0.6),
+              0 0 20px rgba(139, 92, 246, 0.3);
+}
+
+.edu-period {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--accent-cyan);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.8rem;
+}
+
+.edu-degree {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+
+.edu-degree svg {
+  color: var(--accent-cyan);
+  flex-shrink: 0;
+}
+
+.edu-degree h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.edu-institution {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.edu-institution svg {
+  color: var(--accent-cyan);
+  opacity: 0.7;
+  flex-shrink: 0;
+}
+
+.edu-description {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .education-timeline {
+    padding-left: 1.5rem;
+  }
+
+  .edu-timeline-dot {
+    left: -1.5rem;
+  }
+
+  .edu-timeline-card {
+    padding: 1.4rem 1.2rem;
+  }
+
+  .edu-degree h3 {
+    font-size: 1.1rem;
+  }
+}
