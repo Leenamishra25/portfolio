@@ -16,10 +16,10 @@ function App() {
       <main>
         <Hero />
         <About />
-        <Education />
-        <Skills />
         <Projects />
+        <Skills />
         <Certifications />
+        <Education />
         <Contact />
       </main>
       <Footer />
