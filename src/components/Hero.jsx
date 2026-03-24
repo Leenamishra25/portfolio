@@ -15,7 +15,7 @@ const Hero = () => {
             Full Stack Developer.
           </h1>
           <p className="hero-description">
-            I'm a B.Tech CSE 3rd-year student passionate about building real-world applications using modern frameworks and robust backend architectures.
+            I'm a B.Tech CSE 3rd-year student passionate about building real-world applications using modern frameworks.
           </p>
           
           <div className="hero-ctas">
